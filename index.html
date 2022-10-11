@@ -8,12 +8,16 @@
       .invisible_list {
         visibility: hidden;
       }
+
+      .ckickColor {
+        color: blue;
+      }
     </style>
   </head>
 
   <body>
     <div>
-      <h1 onclick="changeTitle()">This is the title of the page</h1>
+      <h1 onclick="makeItClickable()">This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -141,7 +145,9 @@
       */
 
       const makeItClickable = function () {
-        //
+        let clickableTitle = document.querySelector("h1");
+        console.log(clickableTitle);
+        clickableTitle.classList.toggle("ckickColor");
       };
 
       /* EXERCISE 10
