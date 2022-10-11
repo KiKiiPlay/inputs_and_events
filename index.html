@@ -34,7 +34,7 @@
 
       <a href="https://epicode.it">This link goes to Epicode</a>
 
-      <div onclick="changePcontent()">
+      <div id="first_div" onclick="changePcontent()">
         <p>This text is just for the exercise</p>
       </div>
 
@@ -109,7 +109,10 @@
       */
 
       const addParagraph = function (content) {
-        //
+        let firstDiv = document.getElementById("first_div");
+        let newP = document.createElement("p");
+        newP.innerText = content;
+        firstDiv.appendChild(newP);
       };
 
       /* EXERCISE 7
