@@ -30,7 +30,7 @@
 
       <a href="https://epicode.it">This link goes to Epicode</a>
 
-      <div>
+      <div onclick="changePcontent()">
         <p>This text is just for the exercise</p>
       </div>
 
@@ -75,7 +75,8 @@
     */
 
       const changePcontent = function () {
-        //
+        let newText = document.querySelector("p");
+        newText.innerText = "This text has changed";
       };
 
       /* EXERCISE 4
