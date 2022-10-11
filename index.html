@@ -129,7 +129,11 @@
       */
 
       const paintItGreen = function () {
-        //
+        let allLI = document.querySelectorAll("li");
+        console.log(allLI.length);
+        for (let i = 0; i <= allLI.length - 1; i++) {
+          allLI[i].style.backgroundColor = "green";
+        }
       };
 
       /* EXERCISE 9
