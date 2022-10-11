@@ -5,8 +5,8 @@
         color: red;
       }
 
-      #secondList {
-        /* visibility: hidden; */
+      .invisible_list {
+        visibility: hidden;
       }
     </style>
   </head>
@@ -120,7 +120,8 @@
       */
 
       const firstUlDisappear = function () {
-        //
+        let firstUL = document.getElementById("firstList");
+        firstUL.classList.add("invisible_list");
       };
 
       /* EXERCISE 8
